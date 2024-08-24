@@ -1,0 +1,49 @@
+/* styles.css */
+.video-player {
+    width: 640px;
+    margin: 40px auto;
+}
+
+.controls {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#play-pause-button, #mute-button {
+    margin-right: 10px;
+}
+
+#volume-slider {
+    vertical-align: middle;
+}
+
+/* Add custom font for subtitles */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('vazirfont.ttf'); /* Ensure the path is correct */
+}
+
+/* Plyr caption styles */
+.plyr__captions {
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 29px;
+    color: #fff; /* White text color */
+    background-color: transparent; /* Remove any default Plyr background */
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: none; /* Remove any Plyr shadow */
+}
+
+.plyr__caption {
+    background-color: rgba(0, 0, 0, 0.8); /* Custom black background with 80% opacity */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Custom shadow */
+    display: inline-block; /* Ensure the background applies only to the text */
+}
+
+/* Additional styles for Plyr can be added here */
